@@ -46,7 +46,7 @@ JIRA Task Creation and Management Guidelines
 ## Handling Completed Tasks
 
 - **Finality of Closure**: Once a task is closed, it is considered completed forever.
-- **Addressing Post-Completion Issues**: If issues arise related to a closed task, create a new bug and link it to the original task. Do not reopen closed tasks.
+- **Addressing Post-Completion Issues**: If issues arise related to a task that has already been closed, create a new bug and link it to the original task. Avoid reopening closed tasks. This is important because each task is associated with specific build and deployment stages. Creating a new Pull Request (PR) using the same issue ticket can lead to confusing results and make it more challenging to track the life cycle of that issue.
 - **Documentation**: Ensure all relevant information, including the reason for closure, is documented in the task before closing. For example, if it was closed and there was no PR leave some brief note explaining that decision.
 
 ## Additional Considerations
